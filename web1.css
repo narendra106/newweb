@@ -1,0 +1,476 @@
+@import url('https://fonts.cdnfonts.com/css/wrenn');
+@import url('https://db.onlinewebfonts.com/c/6ff737825f0d2bb13480cc6e4e0208fe?family=HEROEAU+ELEGANT+DEMO');
+@import url('https://fonts.cdnfonts.com/css/the-solstice');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    background-color:#ecfae5;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #00ff88;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 0.8rem 0rem;
+    z-index: 1;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.9);
+}
+.inlogin{
+    width: 80px;
+    height: 40px;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    background: #0a121a;
+    color:#00ff88 ;
+    margin-right: 4rem;
+}
+.inlogin:hover{
+    border: 3px solid black;
+    border-radius: 7px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+}
+.inlogin:active{
+    color: #00ff88;
+    border: none;
+    background-color: #0a121a;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.outlogbox{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.inlogbox{
+    padding: 20px;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    background:#0a121a92;
+    backdrop-filter:blur(10px);
+    color: #ffffff;
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+}
+.outlogbox h1{
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+.outlogbox a{
+    color: red;
+    text-decoration: none;
+}
+.cb{
+    display: flex;
+    gap: 60px;
+}
+.ip input{
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+.loginbutton button{
+    width: 270px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #0a121a;
+    font-weight: bold;
+    font-size: large;
+    transition:background-color 0.4s ease-in-out ;
+}
+.inlogbox i{
+    position: absolute;
+    right:20px;
+    top: 20px;
+    font-size: 20px;
+}
+.ip input:focus{
+    border: 2px solid #00ff88;
+}
+.loginbutton button:hover{
+    background-color: #00ff88;
+
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu ul i{
+    font-size: 25px;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2.5rem;
+    font-weight: bold;  
+}
+.menu ul li i{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 4rem;
+    font-family: 'THE SOLSTICE', sans-serif;
+ 
+}
+.bars{
+    display: none;
+}
+.x i{
+    display: none;
+}
+li span{
+    display:none;
+}
+.menu ul li{
+    position: relative;
+    transition:transform 0.4s ease-in-out ;
+}
+.menu ul li:hover{
+    transform: translateY(-7px);
+}
+.menu ul li::after{
+    content: '';
+    position: absolute;
+    background:#0a121a;
+    left:0;
+    bottom: -6px;
+    height: 2.5px;
+    width:0%;
+    transition: 0.3s ease-in-out;
+}
+.menu ul li:hover::after{
+    width: 100%;
+    
+}
+.outmenu{
+    width: 100%;
+    height: 95vh;
+}
+.main{
+    width: 100%;
+    height: 95dvh;
+    color: white;
+    background: url('mainimage.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 65.6px;
+}
+.main h1{
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 100px;
+    font-size: 40px;
+    position:absolute;
+    font-family: 'Gravity', sans-serif;
+}
+.details{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.details h2{
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    color:#0a121a;
+    background: #00ff88;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn:hover{
+    border: 2px solid #00ff88;
+    color: #00ff88;
+    font-weight: bold;
+    background: transparent;
+}
+.detail{
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.textarea1{
+    width: 250px;
+    height:70px ;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+}
+.detail:focus,.textarea1:focus{
+    border: 2px solid #00ff88;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.og{
+    color: #00ff88;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    position: relative;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    margin: 20px;
+}
+.aboutus{
+    height: 220px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 0px 20px;
+}
+.aboutus h2{
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    justify-content: space-evenly;
+    color: #00ff88;
+    width: 100%;
+    background-color:#222222;
+    font-size: 18px;
+}
+.col h3{
+    position: relative;
+    margin-bottom: 25px;
+}
+.col h3::before{
+    content: '';
+    position: absolute;
+    background: #00ff88;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+
+}
+.col{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.footer col h3{
+    position: relative;
+    margin-bottom: 15px;
+}
+.col ul li a{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+}
+.col ul{
+    list-style-type: none;
+    line-height: 28px;
+}
+.sociallinks a{
+    color: white;
+    padding: 13px;
+    font-size: 1.5rem;
+}
+.sociallinks{
+    width:auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.col ul li a:hover{
+    color: white;
+}
+.sociallinks a:hover{
+    color: #00ff88;
+}
+.rights{
+    background: black;
+    padding: 15px;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width:740px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.6rem;
+    }
+    .ilogo{
+        position: absolute;
+        align-self: center;
+        left: 17%;
+    }
+    .x i{
+        display: block;   
+    }
+    li span{
+        display: block;
+        gap: 5px;
+        font-family:serif;
+    }
+    .menu ul{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        background-color: #000000b3;
+        left: 0;
+        top: 65.6px;
+        height: 100%;
+        z-index: 1;
+        width: 300px;
+        backdrop-filter: blur(7px);
+    }
+    .menu ul li{
+        margin-bottom: 30px;
+    }
+    .menu ul i{
+        display: flex;
+        gap: 25px;
+        color: #ffffff;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .menu ul li i{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        color: #ffffff;
+    } 
+    .card{
+        margin-bottom: 25px;
+        height: 300px;
+        width: 300px;
+    }
+    .col ul li a{
+        font-size: 1.5rem;
+        
+    }
+    .menu ul li:hover::after{
+    width:0;
+    
+    }
+    .menu ul li:hover{
+        transform: translateY(0);
+    }
+    .main{
+        /* background: url('mainmobile.jpg');
+        background-repeat: no-repeat;
+        background-size:cover; */
+        margin-top: 65.6px;
+    }
+    .main h1{
+        width:auto;
+        text-align: center;
+        margin-top: 520px;
+        margin-left: 0px;
+    }
+    form{
+        width: 400px;
+    }
+    .detail{
+        width:85%;
+        height: 45px;
+    }
+    .textarea1{
+        width: 85%;
+        height: 90px;
+    }
+    .aboutus{
+        margin-bottom: 20px;
+    }
+    .bars{
+        display: block;
+        font-size: 32px;
+        position: absolute;
+        left: 2.5rem;
+        top: 8px;
+    }
+    
+        
+}
+
