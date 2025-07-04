@@ -398,10 +398,10 @@ form{
         position: fixed;
         background-color: #000000b3;
         left: 0;
-        top: 65.6px;
+        top: 72px;
         height: 100%;
         z-index: 1;
-        width: 300px;
+        width: 270px;
         backdrop-filter: blur(7px);
     }
     .menu ul li{
@@ -441,7 +441,7 @@ form{
         /* background: url('mainmobile.jpg');
         background-repeat: no-repeat;
         background-size:cover; */
-        margin-top: 65.6px;
+        margin-top: 72px;
     }
     .main h1{
         width:auto;
