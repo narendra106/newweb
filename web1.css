@@ -191,7 +191,7 @@ li span{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 65.6px;
+    margin-top: 72px;
 }
 .main h1{
     text-align: center;
@@ -390,9 +390,8 @@ form{
     li span{
         display: block;
         gap: 5px;
-        font-family:serif;
+        font-family:verdana;
         font-size: 17px;
-        font-family: cursive;
     }
     .menu ul{
         display: none;
