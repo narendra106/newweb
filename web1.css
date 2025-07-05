@@ -87,7 +87,8 @@ body{
 }
 .cb{
     display: flex;
-    gap: 60px;
+    gap: 50px;
+    font-size: 17px;
 }
 .ip input{
     width: 250px;
