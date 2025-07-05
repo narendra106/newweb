@@ -4,7 +4,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 body{
     height: 100dvh;
@@ -36,7 +35,7 @@ body{
     border: none;
     background: #0a121a;
     color:#98fb98 ;
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 .inlogin:hover{
     border: 3px solid black;
@@ -209,13 +208,21 @@ li span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    
 }
-.details h2{
+form input,form textarea{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    
+}
+.cont h2{
     color: #98fb98;
     font-weight: bold;
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
 }
 form{
     display: flex;
@@ -253,6 +260,9 @@ form{
     padding-left: 15px;
     border: none;
     outline: none;
+}
+.detail,.textarea1{
+    border: 2px solid black;
 }
 .detail:focus,.textarea1:focus{
     border: 2px solid #98fb98;
@@ -449,11 +459,8 @@ form{
     .main h1{
         width:auto;
         text-align: center;
-        margin-top: 520px;
+        margin-top: 200px;
         margin-left: 0px;
-    }
-    form{
-        width: 400px;
     }
     .detail{
         width:85%;
@@ -470,7 +477,7 @@ form{
         display: block;
         font-size: 32px;
         position: absolute;
-        left: 2.5rem;
+        left: 1.5rem;
         top: 8px;
     }
     
